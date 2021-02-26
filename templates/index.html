@@ -1,0 +1,50 @@
+<html>
+ 	<head>
+		<meta charset="utf-8" />
+			<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+		<title>D'App Dashboard</title>
+		<link rel = "stylesheet" type = "text/css" 
+    href = "static/style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+	</head>
+
+  <div class="header">
+    <h> Welcome {{name}}! </h>
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <a href="{{ url_for('index') }}"class="active">Dashboard</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">D'App Portal</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('help') }}">Help</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div><br>
+
+	<body><br><br><br><br><br>
+
+	  <div class = "card">
+	    <h2> Level {{level}} </h2>
+<!-- insert xp bar -->
+      <p2> You have {{remainder}} stars left to the next level! </p2>
+    </div><br><br>
+
+	  <div class = "card">
+	    <h2> Daily Challenge </h2>
+      <p2> Task: Complete 3 activities </p2><br><br>
+      <h3> {{num_of_tasks_completed_today}} / 3 </h3><br>
+    </div><br><br>
+
+    <input type="image" src="{{url_for('static', filename='moru.jpg')}}" style="height: 50%" class="center" name="buttontip" class="buttontip" id="buttontip" /></input>
+
+  </body><br><br><br><br><br>
+
+	<div class = "footer">
+	  <h1> Contact us </h1>
+    <p2><b>Email</b> us at <b>chen.qirui@dhs.sg</b></p2><br>
+    </p2><br><br>
+  </div>
+
+</html>

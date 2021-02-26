@@ -1,0 +1,5 @@
+id, name, cost
+1, mud house, 5
+2, gingerbread house, 10
+3, treehouse, 20
+4, castle, 40
